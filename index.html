@@ -28,7 +28,7 @@
     <div class="modal" id="about">
       <div class="modal-content">
         <h2>About Me</h2>
-        <p>Hi, I'm M Tahtafaiz Madani !! I'm a 19 y/o undergrad student from Bandung and I study Software Engineering to improve my skills, to be or not to be - I think, therefore I am...</p>
+        <p>Hi, I'm M Tahtafaiz Madani !! I'm a 19 y/o undergraduate student from Bandung. I study Software Engineering to improve my skills, my programming languages skills includes mostly in Go, C#, Java, MySQL, and C++. To be or not to be - I think, therefore I am...</p>
         <ul>
           <li>LinkedIn: m-tahtafaiz-madani-64bb14283</li>
           <li>GitHub: tahtafa</li>
@@ -48,6 +48,11 @@
             <strong>Pomodoro Timer</strong>
           </button> — A matcha-themed animated timer.
         </li>
+        <li>
+         <button onclick="toggleModal('proj-cv')" style="all: unset; cursor: pointer; color: #007bff; text-decoration: underline;">
+          <strong>CV Web App</strong>
+         </button> — A desktop-style CV built with HTML, CSS, JS.
+        </li>
       </ul>
       <button onclick="toggleModal('side-projects')">Close</button>
     </div>
@@ -57,10 +62,26 @@
     <div class="modal-content">
       <h2>Pomodoro Timer</h2>
       <img src="assets/pomodoro-preview.png" alt="Pomodoro Timer" style="width:100%; max-width:400px;" />
-      <p>A matcha-themed animated Pomodoro timer built with vanilla HTML/CSS/JS.</p>
+      <p>
+        A matcha-themed animated Pomodoro timer built with vanilla HTML/CSS/JS.
+        🌐 <a href="https://matcha-pomodoro.vercel.app/" target="_blank" style="color:#007bff; text-decoration: underline;">Visit Live Project</a>
+      </p>
       <button onclick="toggleModal('proj-pomodoro')">Close</button>
     </div>
   </div>
+
+  <div class="modal" id="proj-cv">
+   <div class="modal-content">
+     <h2>CV Web App</h2>
+     <img src="assets/cv-preview.png" alt="CV Web App Preview" style="width:100%; max-width:400px;" />
+     <p>
+       A desktop-style CV website inspired by vintage OS themes.<br/>
+       🌐 <a href="https://cv-desktop-jy9h.vercel.app/" target="_blank" style="color:#007bff; text-decoration: underline;">Visit Live Project</a>
+     </p>
+     <button onclick="toggleModal('proj-cv')">Close</button>
+   </div>
+  </div>
+
 </div>
 
   <script src="script.js"></script>
