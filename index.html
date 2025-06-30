@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My CV Desktop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="desktop">
+    <div class="icon" onclick="toggleModal('about')">
+      <img src="assets/about-icon.png" alt="About Me" />
+      <p>About Me</p>
+    </div>
+
+    <div class="icon">
+      <img src="assets/folder.png" alt="Projects" />
+      <p>Projects</p>
+    </div>
+
+    <!-- Add more icons as needed -->
+
+    <div class="modal" id="about">
+      <div class="modal-content">
+        <h2>About Me</h2>
+        <p>Hi, I'm a 24 y/o Information System fresh grad from Malang...</p>
+        <ul>
+          <li>LinkedIn: mtyahya</li>
+          <li>GitHub: longprism</li>
+          <li>Email: tahtayahya213@gmail.com</li>
+        </ul>
+        <button onclick="toggleModal('about')">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
