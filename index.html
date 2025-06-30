@@ -21,7 +21,7 @@
     <div class="icon">
       <div class="icon" onclick="toggleModal('side-projects')">
       <img src="assets/folder.png" alt="Side Projects" />
-      <p>Sde Projects</p>
+      <p>Side Projects</p>
     </div>
 
     <!-- Add more icons as needed -->
@@ -44,12 +44,22 @@
     <div class="modal-content">
       <h2>Side Projects</h2>
       <ul>
-        <li><strong>Pomodoro Timer</strong> — A matcha-themed animated timer built with HTML/CSS/JS.</li>
-        <li><strong>Fuzzy Logic Restaurant Picker</strong> — An AI project ranking Bandung’s top restaurants.</li>
-        <li><strong>Design Portfolio</strong> — A colorful gallery of my digital and graphic design works.</li>
-        <li><strong>CourseConnect App</strong> — Prototype to help users find local courses nearby.</li>
+        <li>
+          <button onclick="toggleModal('proj-pomodoro')" style="all: unset; cursor: pointer; color: #007bff; text-decoration: underline;">
+            <strong>Pomodoro Timer</strong>
+          </button> — A matcha-themed animated timer.
+        </li>
       </ul>
       <button onclick="toggleModal('side-projects')">Close</button>
+    </div>
+  </div>
+
+  <div class="modal" id="proj-pomodoro">
+    <div class="modal-content">
+      <h2>Pomodoro Timer</h2>
+      <img src="assets/pomodoro-preview.png" alt="Pomodoro Timer" style="width:100%; max-width:400px;" />
+      <p>A matcha-themed animated Pomodoro timer built with vanilla HTML/CSS/JS.</p>
+      <button onclick="toggleModal('proj-pomodoro')">Close</button>
     </div>
   </div>
 
